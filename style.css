@@ -1,0 +1,65 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width:100%;
+    padding:20px 5%;
+    display: grid;
+    /*for row layout*/
+    grid-template-columns: repeat(4,1fr);
+    gap:1em;
+}
+.container .card{
+    padding:20px;
+    border: 1px solid red;
+    border-radius: 4px;
+    text-align: center;
+}
+.container .card:nth-child(even){
+    background:linear-gradient(210deg,purple,blueviolet);
+    color:white;
+}
+.container .card:nth-child(odd){
+    background:linear-gradient(210deg,pink,red);
+    color:white;
+}
+#card1{
+    grid-row-start:1;
+    grid-row-end:4;
+}
+#card6{
+    grid-row-start:5;
+}
+#card2{
+    grid-row-start:2;
+}
+
+#card5{
+    grid-row-start:1;
+    grid-row-end:3;
+}
+#card5{
+    grid-column-start:3;
+    grid-column-end:5;
+}
+body{
+    width:100%;
+    height:100%;
+}
+div{
+    width:500p auto;
+    border:auto;
+    border-radius:5px;
+    padding:10px;
+    text-align: center;
+}
+ .parent {
+    width:500px;
+    background:whitesmoke;
+    padding:10px;
+    text-align: center;
+    margin:20px auto;
+}
